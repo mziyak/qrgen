@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="two.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <input type="text" id="urlInput" placeholder="Enter URL" />
+        <button onclick="generateQRCode()">Generate QR Code</button>
+        <div id="qrcode-container">
+            <div id="qrcode"></div>
+        </div>
+        <div class="download-buttons">
+            <button onclick="downloadQRCode('png')">Download as PNG</button>
+            <button onclick="downloadQRCode('jpg')">Download as JPG</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script src="two.js"></script>
+</body>
+</html>

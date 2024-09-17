@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  body {
+    background: #000; /* Black background for space theme */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevents scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #00ffff; /* Neon cyan text */
+  }
+  
+  .container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    border: 2px solid #00ffff; /* Neon cyan border */
+    box-shadow: 0 0 20px #00ffff; /* Glowing effect */
+    animation: container-glow 2s infinite alternate ease-in-out;
+  }
+  
+  /* Glow animation for the container */
+  @keyframes container-glow {
+    from {
+        box-shadow: 0 0 15px #00ffff;
+    }
+    to {
+        box-shadow: 0 0 30px #00ffff;
+    }
+  }
+  
+  h1 {
+    color: #00ffff;
+    font-family: 'Orbitron', sans-serif; /* Space-like font */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.6), 0 0 45px rgba(0, 255, 255, 0.4);
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background for input */
+    color: #ffffff; /* White text inside input */
+    font-size: 1em;
+  }
+  
+  input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent placeholder */
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #00ffff;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px #00ffff; /* Glowing effect */
+    animation: button-glow 2s infinite alternate ease-in-out;
+  }
+  
+  /* Glowing animation for the button */
+  @keyframes button-glow {
+    from {
+        box-shadow: 0 0 10px #00ffff;
+    }
+    to {
+        box-shadow: 0 0 20px #00ffff;
+    }
+  }
+  
+  button:hover {
+    background-color: rgba(0, 255, 255, 0.8); /* Slight glow effect on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+  }
+  
+  /* Center the QR code container */
+  #qrcode-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 20px;
+  }
+  
+  /* QR Code Styling */
+  #qrcode {
+    background-color: #ffffff; /* White background for QR code */
+    padding: 10px; /* Optional padding around QR code */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional shadow for better visibility */
+  }
+  /* Existing styles */
+
+/* Existing styles */
+
+.download-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; /* Distribute space between buttons */
+}
+
+.download-buttons button {
+  width: 48%; /* Adjust width to create space */
+  padding: 10px;
+  background: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px #00ffff; /* Glowing effect */
+  animation: button-glow 2s infinite alternate ease-in-out;
+}
+
+.download-buttons button:hover {
+  background-color: rgba(0, 255, 255, 0.8); /* Slight glow effect on hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
